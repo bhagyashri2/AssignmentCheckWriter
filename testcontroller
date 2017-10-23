@@ -1,0 +1,18 @@
+describe('The test controller', function () {
+
+  beforeEach(module('myapp'));
+
+  var $controller;''
+
+  beforeEach(inject(function(_$controller_){
+    $controller = _$controller_;
+  }));
+
+  		it('has a dummy spec to test -23', function () {
+			var $scope = {};
+			var controller = $controller('puzzleController', { $scope: $scope });
+					
+			
+			expect(-23).toEqual('Please Enter Valid Input');
+		});	
+});
